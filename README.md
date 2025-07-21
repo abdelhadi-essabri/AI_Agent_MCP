@@ -262,24 +262,6 @@ Si vous avez besoin de plus d'informations ou d'une action spécifique, n'hésit
 | `reactivate_employee` | Réactive un employé | `employee_id` |
 | `get_department_stats` | Statistiques | `departement`* |
 
-*Paramètres optionnels
-
-## 🏗️ Architecture Technique
-
-### 🔄 **Flux de Communication**
-```mermaid
-graph LR
-    A[Utilisateur] --> B[Chatbot]
-    B --> C[LLM Azure OpenAI]
-    C --> D[Parser tool_call]
-    D --> E[Client MCP JSON-RPC]
-    E --> F[Serveur FastMCP]
-    F --> G[Fonction Python]
-    G --> F
-    F --> E
-    E --> B
-    B --> A
-```
 
 ### 📡 **Protocole JSON-RPC**
 ```json
