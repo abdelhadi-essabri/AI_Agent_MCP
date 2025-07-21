@@ -20,7 +20,7 @@ Un chatbot intelligent utilisant le protocole **MCP (Model Context Protocol)** a
 ```
 chatbot-fastmcp/
 ├── 🤖 chatbot.py              # Chatbot principal avec JSON-RPC
-├── 🔧 real_mcp_client.py      # Client MCP JSON-RPC
+├── 🔧 mcp_client.py      # Client MCP JSON-RPC
 ├── ⚙️ config.py               # Configuration Azure OpenAI
 │
 ├── 🧮 calculator_server.py    # Serveur FastMCP pour calculs
@@ -48,8 +48,8 @@ chatbot-fastmcp/
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Clone et installation du projet
-git clone <votre-repo>
-cd chatbot-fastmcp
+git clone https://github.com/abdelhadi-essabri/AI_Agent_MCP.git
+cd AI_Agent_MCP
 
 # Installation des dépendances avec uv
 uv pip install mcp langchain-openai aiofiles
@@ -66,7 +66,7 @@ Créez un fichier `.env` dans le répertoire racine :
 ```env
 AZURE_OPENAI_ENDPOINT=your-endpoint-here
 AZURE_OPENAI_API_KEY=your-api-key-here
-AZURE_OPENAI_DEPLOYMENT=gpt-4
+AZURE_OPENAI_DEPLOYMENT=gpt-4o
 AZURE_OPENAI_API_VERSION=2024-02-15-preview
 TEMPERATURE=0.7
 MAX_TOKENS=2000
@@ -186,9 +186,9 @@ Le résultat de 15 * 8 est 120.
 
 ### 📁 **Gestion des Fichiers**
 ```
-👤 Vous: Crée un fichier test.txt avec Hello World dans C:\Users\hipeh\Documents\MCP\claude
-🤖 Assistant JSON-RPC: 🔧 Exécution JSON-RPC: filesystem.write_file avec {'path': 'C:\\Users\\hipeh\\Documents\\MCP\\claude\\test.txt', 'content': 'Hello World'}
-Le fichier "test.txt" a été créé avec succès dans le répertoire "C:\Users\hipeh\Documents\MCP\claude" et contient le texte "Hello World".
+👤 Vous: Crée un fichier test.txt avec Hello World dans C:\Users\xxxx
+🤖 Assistant JSON-RPC: 🔧 Exécution JSON-RPC: filesystem.write_file avec {'path': 'C:\\Users\\xxxx\\test.txt', 'content': 'Hello World'}
+Le fichier "test.txt" a été créé avec succès dans le répertoire "C:\Users\xxxx" et contient le texte "Hello World".
 ```
 
 ### 👥 **Gestion des Employés**
@@ -408,7 +408,6 @@ if __name__ == "__main__":
 
 ### 📚 **Ressources**
 - [Documentation MCP](https://spec.modelcontextprotocol.io/)
-- [FastMCP GitHub](https://github.com/pydantic/fastmcp)
 - [Langchain Documentation](https://python.langchain.com/)
 - [Azure OpenAI Service](https://azure.microsoft.com/en-us/products/ai-services/openai-service)
 
@@ -418,6 +417,6 @@ MIT License - Voir le fichier `LICENSE` pour plus de détails.
 
 ---
 
-**🎉 Projet développé avec FastMCP, JSON-RPC et Azure OpenAI** 
+**🎉 Projet développé avec MCP, JSON-RPC et Azure OpenAI** 
 
 *Un exemple complet d'architecture MCP moderne pour l'intégration d'outils avec des LLMs* 🚀
