@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "prenom": "Alice",
+    "nom": "Martin",
+    "email": "alice.martin@test.com",
+    "poste": "Développeuse Senior",
+    "departement": "IT",
+    "salaire": 65000.0,
+    "date_embauche": "2022-01-15",
+    "telephone": "01.11.11.11.11",
+    "adresse": "",
+    "date_creation": "2025-07-21T12:43:15.883354",
+    "date_modification": "2025-07-21T12:43:15.883354",
+    "actif": true
+  },
+  {
+    "id": 2,
+    "prenom": "Bob",
+    "nom": "Dupont",
+    "email": "bob.dupont@test.com",
+    "poste": "Chef de Projet",
+    "departement": "IT",
+    "salaire": 75000.0,
+    "date_embauche": "2021-03-10",
+    "telephone": "01.22.22.22.22",
+    "adresse": "",
+    "date_creation": "2025-07-21T12:43:15.890537",
+    "date_modification": "2025-07-21T12:43:15.890537",
+    "actif": true
+  },
+  {
+    "id": 3,
+    "prenom": "Carol",
+    "nom": "Bernard",
+    "email": "carol.bernard@test.com",
+    "poste": "Comptable",
+    "departement": "Finance",
+    "salaire": 45000.0,
+    "date_embauche": "2023-06-01",
+    "telephone": "01.33.33.33.33",
+    "adresse": "",
+    "date_creation": "2025-07-21T12:43:15.906925",
+    "date_modification": "2025-07-21T12:43:15.906925",
+    "actif": true
+  },
+  {
+    "id": 4,
+    "prenom": "Test",
+    "nom": "User",
+    "email": "test.user@example.com",
+    "poste": "Testeur",
+    "departement": "QA",
+    "salaire": 50000.0,
+    "date_embauche": "2024-01-01",
+    "telephone": "01.23.45.67.89",
+    "adresse": "",
+    "date_creation": "2025-07-21T14:54:48.242581",
+    "date_modification": "2025-07-21T14:54:48.242581",
+    "actif": true
+  }
+]
